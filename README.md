@@ -43,3 +43,5 @@ Após a configuração, você pode começar a utilizar a aplicação para:
 
 Contribuições são sempre bem-vindas! Se você tem alguma sugestão para melhorar a aplicação, sinta-se à vontade para criar uma issue ou enviar um pull request.
 
+> Confira o canal no YouTube [Crislaine D'Paula](https://www.youtube.com/@CrisTech20) para mais conteúdos sobre tecnologia e programação.
+
