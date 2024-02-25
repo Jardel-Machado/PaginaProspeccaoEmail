@@ -1,0 +1,38 @@
+﻿@model EmailModel
+
+@{
+    Layout = "_LayoutDeslogada";
+}
+
+<div class="d-flex flex-column justify-content-center align-content-center">
+    <div class="text-center">
+        <div style="height:300px" class="text-center mt-3 mb-5">
+            <img src="/img/program.jpg" style="width:100%; height: 100%" alt="Alternate Text"/>
+        </div>
+    </div>
+    <div class="text-center">
+        <h2 style="color:darkorange; font-weight: bold">Desperte seu Potencial: Aprenda Programação de Forma Descomplicada!</h2>
+        <p class="text-center">
+            Você já pensou em destravar o universo da programação, mas não sabe por onde começar? Seja para impulsionar sua 
+            carreira ou explorar novos horizontes, nosso curso de programação é a chave para desbloquear todo o seu potencial!
+            Insira abaixo seus dados para ter mais informações.
+        </p>
+    </div>
+    <div>
+       <form method="post" asp-asp-controller="Home" asp-action="SalvarDadosCliente">
+           <div class="mb-3">
+                <label class="form-label">Nome:</label>
+                <input type="text" class="form-control" asp-for="Nome"/>
+                <span asp-validation-for="Nome"></span>
+           </div>
+           <div class="mb-3">
+                <label class="form-label">Email:</label>
+                <input type="email" class="form-control" asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+           </div>
+           <button class="btn btn-success text-center w-100" style="color: black; font-weight: bold" type="submit">
+               Enviar informações
+           </button>
+       </form>
+    </div>
+</div>
